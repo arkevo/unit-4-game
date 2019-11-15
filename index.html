@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+
+    <link rel="stylesheet"  type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet"  type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="main-header">
+    <h1>Crystal Collector Game</h1>
+    <button id="instructionsButton">
+        <i class="far fa-question-circle"></i> How to Play
+    </button>
+</div>
+
+<div class="instructionsDiv">
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <ul class="instructionsUl">
+            <li class="instructionsLi">You will be given a random number at the start of the game.</li>
+            <li class="instructionsLi">There are 4 different crystals. By clicking on a crystal, you will add a specific amount of points to your total score. </li>
+            <li class="instructionsLi">You win the game by matching your total score to the random number.</li>
+            <li class="instructionsLi">You lose the game if your total score goes above the random number.</li>
+            <li class="instructionsLi">The value of each crystal is hidden from you until you click on it.</li>
+            <li class="instructionsLi">Each time when the game starts, the game will change the values of each crystal.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <div class="winLossDiv">
+        <div class="winLoss">
+            <ul class="winLossUl">
+                <li class="winLossLi">Wins: 
+                    <span id="wins"></span>
+                </li>
+                <li class="winLossLi">Losses:
+                    <span id="losses"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+            
+    <div class="leftSideDiv">
+        <div class="leftSide">
+            
+            <div class="matchScoreDiv">
+                <h3 id="numberToMatch">Match This Number</h3>
+                <div class="numDiv">
+                    <p id="randomNumber"></p>
+                </div>
+            </div>
+            <div class="matchScoreDiv">
+                <h3 id="yourTotalScore">Your Total Score</h3>
+                <div class="numDiv">
+                    <p id="currentNumber"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContainer">
+            <button id="repeatGame">Play Again</button>
+            <div class="gameContainer">
+                <div class="row1">
+                    <button class="gemButton" id="gem1">
+                        <img src="assets/images/gem1.png" alt="yellow gem">
+                    </button>
+                    <button class="gemButton" id="gem2">
+                        <img src="assets/images/gem2.png" alt="blue gem">
+                    </button>
+                </div>
+                <div class="row2">
+                    <button class="gemButton" id="gem3">
+                        <img src="assets/images/gem3.png" alt="purple gem">
+                    </button>
+                    <button class="gemButton" id="gem4">
+                        <img src="assets/images/gem4.png" alt="pink gem">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="totheside">
+          
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>
